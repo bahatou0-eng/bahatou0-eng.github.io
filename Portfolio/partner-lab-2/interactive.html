@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARCHV - Interactive Page</title>
+     <link rel="stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+        <center>
+            <h1 id="greeting">Hello User!</h1>
+        </center>
+        
+        <p id="message">Welcome to our interactive page. Customize your experience below!</p>
+
+        <div class="myDiv">
+            <h3>Customize Your Page</h3>
+            
+            <label for="nameInput">Enter Your Name:</label><br>
+            <input type="text" id="nameInput" placeholder="Your name here"><br><br>
+            
+            <label for="messageInput">Enter Your Message:</label><br>
+            <input type="text" id="messageInput" placeholder="Your custom message"><br><br>
+            
+            <label for="colorSelect">Choose Background Color:</label><br>
+            <select id="colorSelect">
+                <option value="#ffc0cb">Pink (Default)</option>
+                <option value="#FFD700">Gold</option>
+                <option value="#87CEEB">Sky Blue</option>
+                <option value="#90EE90">Light Green</option>
+                <option value="#DDA0DD">Plum</option>
+            </select><br><br>
+            
+            <button class="button_1" onclick="updatePage()">Submit Changes</button>
+        </div>
+
+        <br>
+
+        <div class="myDiv">
+            <h3>To Do List</h3>
+            
+            <label for="todoInput">Add To Do Item:</label><br>
+            <input type="text" id="todoInput" placeholder="Enter task"><br><br>
+            
+            <button class="button_1" onclick="addTodo()">Add Item</button>
+            
+            <ol id="todoList"></ol>
+        </div>
+
+        <br>
+
+     <a href="homepage.html">
+        <button class="button_1">Back To Homepage</button>
+        </a>
+
+ <script src="script.js"></script>
+    </body>
+</html>
